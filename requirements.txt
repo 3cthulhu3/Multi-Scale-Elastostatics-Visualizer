@@ -1,0 +1,6 @@
+numpy==1.26.4
+scipy==1.13.0
+matplotlib==3.8.4
+plotly==5.20.0
+streamlit==1.35.0
+meshio==5.3.5
