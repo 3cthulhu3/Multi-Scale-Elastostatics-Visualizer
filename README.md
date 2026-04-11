@@ -1,22 +1,10 @@
-\# Multi-Scale Elastostatics Visualizer
+# Multi-Scale Elastostatics Visualizer [LIVE DEMO]
 
-Tool for solving/visualizing multiscale elasticity (beginner FEM proxy).\[web:5]
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demo-brightgreen)](http://localhost:8501)
 
+Interactive multiscale FEM solver.
+- Macro/micro moduli sliders
+- Live stress/displacement plots
+- Export results
 
-
-\## Live Demo
-
-\[Streamlit App](#) | \[Static Plot](docs/index.html)
-
-
-
-\## Features
-
-\- Param sliders for macro/micro moduli
-
-\- Real-time stress/displacement plots
-
-\- Download results
-
-
-
+**Local run**: `streamlit run app.py`
