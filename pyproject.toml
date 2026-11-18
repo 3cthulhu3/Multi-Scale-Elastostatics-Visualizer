@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msev"
+version = "0.2.0"
+description = "Two-scale (RVE -> bar) finite element elastostatics of composite bars, with an interactive Streamlit front end"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "3cthulhu3" }]
+keywords = ["finite elements", "homogenization", "multiscale", "composites", "elastostatics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+]
+dependencies = ["numpy>=1.22", "scipy>=1.8"]
+
+[project.optional-dependencies]
+plot = ["plotly>=5.18"]
+app = ["plotly>=5.18", "streamlit>=1.36"]
+dev = ["plotly>=5.18", "pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+msev = "msev.cli:main"
+
+[tool.setuptools]
+packages = ["msev"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["error::RuntimeWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["UP007", "UP045"]  # keep `X | None` vs Optional choice free for py39 annotations
