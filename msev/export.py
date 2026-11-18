@@ -15,7 +15,7 @@ def _csv(header: list[str], columns: list) -> str:
     buf = io.StringIO()
     writer = csv.writer(buf, lineterminator="\n")
     writer.writerow(header)
-    for row in zip(*columns):
+    for row in zip(*columns, strict=True):
         writer.writerow([f"{float(v):.10g}" for v in row])
     return buf.getvalue()
 

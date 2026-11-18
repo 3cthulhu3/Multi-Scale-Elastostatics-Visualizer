@@ -7,7 +7,7 @@ name = "msev"
 version = "0.2.0"
 description = "Two-scale (RVE -> bar) finite element elastostatics of composite bars, with an interactive Streamlit front end"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "3cthulhu3" }]
 keywords = ["finite elements", "homogenization", "multiscale", "composites", "elastostatics"]
 classifiers = [
@@ -36,7 +36,7 @@ filterwarnings = ["error::RuntimeWarning"]
 
 [tool.ruff]
 line-length = 120
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP"]

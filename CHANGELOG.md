@@ -11,7 +11,7 @@
 - Streamlit app rewritten: live (cached) solving, presets, *Unit cell*,
   *Verification*, *Export* and *Theory* tabs, small-strain warning.
 - `msev` command-line interface with CSV/JSON/HTML output.
-- 91-test pytest suite, GitHub Actions CI (Python 3.9/3.11/3.13), ruff config,
+- 91-test pytest suite, GitHub Actions CI (Python 3.10/3.12/3.13), ruff config,
   `pyproject.toml`, `.gitignore`, `docs/THEORY.md`.
 - `scripts/build_demo.py` regenerates the static `index.html`.
 
